@@ -2,18 +2,12 @@ import numpy as np
 import pandas as pd
 from collections import Counter
 from math import sqrt
+from sklearn.utils import class_weight
 from sklearn.model_selection import train_test_split
 from sklearn import tree
-from sklearn.metrics import accuracy_score
 from sklearn.model_selection import cross_val_score
-from sklearn.model_selection import GridSearchCV
-import sklearn.metrics as metrics
 from sklearn.metrics import roc_curve,auc,roc_auc_score,recall_score,precision_score,plot_roc_curve, f1_score
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.ensemble import AdaBoostClassifier
 import xgboost as xgb
-from xgboost import plot_importance
-from sklearn.utils import class_weight
 
 training = pd.read_csv(training_file)
 array_training = training.values
@@ -88,6 +82,9 @@ def machine_learning(learning_rate_option, n_estimators_option,  max_depth_optio
 	machine_model = xgb.XGBClassifier(objective= 'binary:logistic', learning_rate =learning_rate_option, n_estimators=n_estimators_option, max_depth=max_depth_option,
 		                              eval_metric='logloss',subsample=subsample_option, colsample_bytree=colsample_bytree_option, gamma=gamma_option, min_child_weight=1,random_state=666)
 	machine_model.fit(X_train, y_train, sample_weight=train_classes_weights)
+	
+	# cross_val_score
+	AUC_cross_score = cross_val_score(machine_model,X_train, y_train,cv=10, scoring='roc_auc').mean()
 
 	# probability_score
 	train_file = pd.DataFrame(machine_model.predict_proba(X_train))
@@ -136,17 +133,17 @@ def machine_learning(learning_rate_option, n_estimators_option,  max_depth_optio
 	training_DD = c_training["TN"]
 	training_Accuracy, training_precision, training_NPV, training_Sensitivity, training_Specificity, training_F1, training_MCC = calculate_MCC(
 		training_AA, training_BB, training_CC, training_DD)
-	return("%f,%f,%f,%f,%f,%f,%f,%f,%f,%f" % 
-		(learning_rate_option,n_estimators_option,max_depth_option,subsample_option,colsample_bytree_option,gamma_option,AAAAA,train_MCC,test_MCC,training_MCC))
+	return("%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f" % 
+		(learning_rate_option,n_estimators_option,max_depth_option,subsample_option,colsample_bytree_option,gamma_option,AAAAA,train_MCC,test_MCC,training_MCC,AUC_cross_score))
 
 if __name__ == '__main__':
 	result_file = open('out_file', 'a')
-	result_file_header = "learning_rate_option,n_estimators_option,max_depth_option,subsample_option,colsample_bytree_option,gamma_option,AAAAA,train_MCC,test_MCC,training_MCC\n"
+	result_file_header = "learning_rate_option,n_estimators_option,max_depth_option,subsample_option,colsample_bytree_option,gamma_option,AAAAA,train_MCC,test_MCC,training_MCC,AUC_cross_score\n"
 	result_file.write(result_file_header)
 
 	XGBboost_learning_rate = [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9]
 	XGBboost_n_estimators = np.arange(300,1501,100)
-	XGBboost_max_depth = np.arange(3,feaure_number,1)
+	XGBboost_max_depth = np.arange(3,feaure_number)
 	XGBboost_subsample = [0.6,0.65,0.7,0.75,0.8,0.85,0.9]
 	XGBboost_colsample_bytree = [0.6,0.65,0.7,0.75,0.8,0.85,0.9]
 	XGBboost_gamma = [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1,2,3,4,5,6,7,8,9,10]
