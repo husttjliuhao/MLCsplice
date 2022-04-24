@@ -1,19 +1,11 @@
 import numpy as np
 import pandas as pd
-import catboost as cb
 import lightgbm
-
 from collections import Counter
 from math import sqrt
 from sklearn.model_selection import train_test_split
-from sklearn import tree
-from sklearn.metrics import accuracy_score
 from sklearn.model_selection import cross_val_score
-from sklearn.model_selection import GridSearchCV
-import sklearn.metrics as metrics
 from sklearn.metrics import roc_curve,auc,roc_auc_score,recall_score,precision_score,plot_roc_curve, f1_score
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.ensemble import AdaBoostClassifier
 from lightgbm import LGBMClassifier
 
 training = pd.read_csv(training_file)
@@ -89,6 +81,9 @@ def machine_learning(n_estimators_option,learning_rate_option,num_leaves_option,
 		                                   max_depth=max_depth_option, min_child_samples=min_child_samples_option,reg_alpha=reg_alpha_option, reg_lambda=reg_lambda_option,
 		                                   subsample=0.8, subsample_freq=1, colsample_bytree=0.8,objective='binary',metrics='auc',class_weight='balanced',random_state=666)
 	machine_model.fit(X_train, y_train)
+	
+	# cross_val_score
+	AUC_cross_score = cross_val_score(machine_model,X_train, y_train,cv=10, scoring='roc_auc').mean()
 
 	# probability_score
 	train_file = pd.DataFrame(machine_model.predict_proba(X_train))
@@ -137,18 +132,18 @@ def machine_learning(n_estimators_option,learning_rate_option,num_leaves_option,
 	training_DD = c_training["TN"]
 	training_Accuracy, training_precision, training_NPV, training_Sensitivity, training_Specificity, training_F1, training_MCC = calculate_MCC(
 		training_AA, training_BB, training_CC, training_DD)
-	return("%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f" % 
-		(n_estimators_option,learning_rate_option,num_leaves_option, max_depth_option,min_child_samples_option, reg_alpha_option,reg_lambda_option,AAAAA,train_MCC,test_MCC,training_MCC))
+	return("%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f" % 
+		(n_estimators_option,learning_rate_option,num_leaves_option, max_depth_option,min_child_samples_option, reg_alpha_option,reg_lambda_option,AAAAA,train_MCC,test_MCC,training_MCC,AUC_cross_score))
 
 if __name__ == '__main__':
 	result_file = open('out_file', 'a')
-	result_file_header = "n_estimators_option,learning_rate_option,num_leaves_option, max_depth_option,min_child_samples_option, reg_alpha_option,reg_lambda_option,AAAAA,train_MCC,test_MCC,training_MCC,MAFSS_MCC,VEX_MCC,Paper_MCC,clinvar_MCC\n"
+	result_file_header = "n_estimators_option,learning_rate_option,num_leaves_option, max_depth_option,min_child_samples_option, reg_alpha_option,reg_lambda_option,AAAAA,train_MCC,test_MCC,training_MCC,AUC_cross_score\n"
 	result_file.write(result_file_header)
 
 	LGBboost_n_estimators = np.arange(100,1501,100)
 	LGBboost_learning_rate =[0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9]
 	LGBboost_num_leaves = [63,127,255]
-	LGBboost_max_depth = np.arange(3,feaure_number,1)
+	LGBboost_max_depth = np.arange(3,feaure_number)
 	LGBboost_min_child_samples = np.arange(10,201,10)
 	LGBboost_reg_alpha = [0,0.01,0.03,0.05,0.07,0.1,0.3,0.5]
 	LGBboost_reg_lambda = [0,0.01,0.03,0.05,0.07,0.1,0.3,0.5]
