@@ -1,0 +1,23 @@
+##########################################################
+best machine learning algorithm from five splicing regions including the exonic region, core donor region, extend donor region, core accept region, and extend accept region
+##########################################################
+1. exonic_best_model 
+XGB = xgb.XGBClassifier(objective= 'binary:logistic', learning_rate =0.4, n_estimators=700, max_depth=3,eval_metric='logloss',subsample=0.7, colsample_bytree=0.7, gamma=2, min_child_weight=1,random_state=666)
+
+2. core_donor_best_model
+CB = cb.CatBoostClassifier(iterations=300, learning_rate=0.02, depth=9,l2_leaf_reg=7,random_strength=30,bagging_temperature=0.1,border_count=254,od_wait=50,od_type='Iter',eval_metric='AUC',class_weights=train_class_weights, 
+                             loss_function='Logloss',task_type='CPU',metric_period=1,cat_features=cat_features,fold_len_multiplier=1.1,logging_level='Silent',random_seed=666)
+
+3. extend_donor_best_model
+LGB = lightgbm.LGBMClassifier(boosting_type='gbdt', n_estimators=500, learning_rate=0.9, num_leaves=255,max_depth=7, min_child_samples=240,reg_alpha=0.5, reg_lambda=0.07,
+                              subsample=0.8, subsample_freq=1, colsample_bytree=0.8,objective='binary',metrics='auc',class_weight='balanced',random_state=666)
+
+
+4. core_acceptor_best_model
+CB = cb.CatBoostClassifier(iterations=200, learning_rate=0.05, depth=10,l2_leaf_reg=19,random_strength=60,bagging_temperature=0.1,border_count=254,od_wait=50,od_type='Iter',eval_metric='AUC',class_weights=train_class_weights, 
+                             loss_function='Logloss',task_type='CPU',metric_period=1,cat_features=cat_features,fold_len_multiplier=1.1,logging_level='Silent',random_seed=666)
+
+
+5. extend_acceptor_best_model
+LGB = lightgbm.LGBMClassifier(boosting_type='gbdt', n_estimators=400, learning_rate=0.2, num_leaves=255,max_depth=11, min_child_samples=240,reg_alpha=0.01, reg_lambda=0.01,
+		                      subsample=0.8, subsample_freq=1, colsample_bytree=0.8,objective='binary',metrics='auc',class_weight='balanced',random_state=666)
