@@ -1,0 +1,12 @@
+soft_name	optimal_th
+SCAP	0.0013
+dbscSNV_RF_SCORE	0.426
+dbscSNV_ADA_SCORE	0.4435
+CADD_splice	17.22
+RegSNPs	0.9731
+spliceAI	0.26
+maxscant_diff_abs	2.91
+Trap	0.803
+MMsplicing_abs	1.77
+SPIDEX_dpsi_abs	3.3764
+SPIDEX_zscore_abs	2.223
