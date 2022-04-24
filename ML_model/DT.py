@@ -3,6 +3,7 @@ import pandas as pd
 from collections import Counter
 from math import sqrt
 from sklearn.model_selection import train_test_split
+from sklearn.model_selection import cross_val_score
 from sklearn import tree
 from sklearn.metrics import roc_curve,auc,roc_auc_score,recall_score,precision_score,plot_roc_curve, f1_score
 
