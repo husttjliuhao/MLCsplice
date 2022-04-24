@@ -3,10 +3,7 @@ import pandas as pd
 from collections import Counter
 from math import sqrt
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
 from sklearn.model_selection import cross_val_score
-from sklearn.model_selection import GridSearchCV
-import sklearn.metrics as metrics
 from sklearn.metrics import roc_curve,auc,roc_auc_score,recall_score,precision_score,plot_roc_curve, f1_score
 from sklearn import tree
 from sklearn.ensemble import RandomForestClassifier
@@ -83,6 +80,9 @@ def machine_learning(criterion_option,n_estimators_option,max_depth_option,min_s
 	machine_model = RandomForestClassifier(criterion=criterion_option, n_estimators=n_estimators_option, max_depth=max_depth_option,
 		min_samples_leaf/split=min_samples_leaf/split_option, max_features=max_features_option, oob_score=True, random_state=666, class_weight='balanced')
 	machine_model.fit(X_train, y_train)
+	
+	# cross_val_score
+	AUC_cross_score = cross_val_score(machine_model,X_train, y_train,cv=10, scoring='roc_auc').mean()
 
 	# probability_score
 	train_file = pd.DataFrame(machine_model.predict_proba(X_train))
@@ -131,19 +131,19 @@ def machine_learning(criterion_option,n_estimators_option,max_depth_option,min_s
 	training_DD = c_training["TN"]
 	training_Accuracy, training_precision, training_NPV, training_Sensitivity, training_Specificity, training_F1, training_MCC = calculate_MCC(
 		training_AA, training_BB, training_CC, training_DD)
-	return("%s,%f,%f,%f,%f,%f,%f,%f,%f" % (criterion_option,n_estimators_option,max_depth_option,min_samples_leaf/split_option,max_features_option,AAAAA,train_MCC,test_MCC,training_MCC))
+	return("%s,%f,%f,%f,%f,%f,%f,%f,%f,%f" % (criterion_option,n_estimators_option,max_depth_option,min_samples_leaf/split_option,max_features_option,AAAAA,train_MCC,test_MCC,training_MCC,AUC_cross_score))
 
 if __name__ == '__main__':
 	result_file = open('out_file', 'a')
-	result_file_header = "criterion_option,n_estimators_option,max_depth_option,min_samples_leaf/split_option,max_features_option,AAAAA,train_MCC,test_MCC,training_MCC\n"
+	result_file_header = "criterion_option,n_estimators_option,max_depth_option,min_samples_leaf/split_option,max_features_option,AAAAA,train_MCC,test_MCC,training_MCC,AUC_cross_score\n"
 	result_file.write(result_file_header)
 
 	RF_criterion = ["entropy","gini"]
 	RF_n_estimators = np.arange(50,501,10)
-	RF_max_depth = np.arange(3,10,1)
+	RF_max_depth = np.arange(3,feaure_number)
 	RF_min_samples_leaf = np.arange(5,251,10)
 	RF_min_samples_split = np.arange(10,301,10)
-	RF_max_features = np.arange(3,10,1)
+	RF_max_features = np.arange(3,feaure_number)
 
 	for criterion_option in RF_criterion:
 		for n_estimators_option in RF_n_estimators:
