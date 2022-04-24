@@ -128,7 +128,7 @@ def machine_learning(C_option,gamma_option):
 	return ("%f,%f,%f,%f,%f,%f" % (C_option, gamma_option, AAAAA, train_MCC, test_MCC, training_MCC))
   
 if __name__ == '__main__':
-	result_file = open('out_file.csv', 'a')
+	result_file = open('out_file', 'a')
 	result_file_header = "C_option,gamma_option,optimal_th,train_MCC,test_MCC,training_MCC\n"
 	result_file.write(result_file_header)
 	SVM_linear_C = [1,3,5,7,10,13,15,17,20,25,30,35,40,45,50,60,70,80,90,100]
