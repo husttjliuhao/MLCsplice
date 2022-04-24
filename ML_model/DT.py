@@ -77,6 +77,9 @@ def calculate_MCC(TP_number,FN_number,FP_number,TN_number):
 def machine_learning(criterion_option,max_depth_option,min_samples_leaf/split_option,max_features_option):
 	machine_model = tree.DecisionTreeClassifier(criterion= criterion_option, max_depth=max_depth_option, min_samples_leaf/split=min_samples_leaf/split_option,max_features=max_features_option,random_state=666,splitter="best",class_weight='balanced')
 	machine_model.fit(X_train, y_train)
+	
+	# cross_val_score
+	AUC_cross_score = cross_val_score(machine_model,X_train, y_train,cv=10, scoring='roc_auc').mean()
 
 	# probability_score
 	train_file = pd.DataFrame(machine_model.predict_proba(X_train))
@@ -125,17 +128,17 @@ def machine_learning(criterion_option,max_depth_option,min_samples_leaf/split_op
 	training_DD = c_training["TN"]
 	training_Accuracy, training_precision, training_NPV, training_Sensitivity, training_Specificity, training_F1, training_MCC = calculate_MCC(
 		training_AA, training_BB, training_CC, training_DD)
-	return("%s,%f,%f,%f,%f,%f,%f,%f" % (criterion_option,max_depth_option,min_samples_leaf/split_option,max_features_option,AAAAA,train_MCC,test_MCC,training_MCC))
+	return("%s,%f,%f,%f,%f,%f,%f,%f,%f" % (criterion_option,max_depth_option,min_samples_leaf/split_option,max_features_option,AAAAA,train_MCC,test_MCC,training_MCC,AUC_cross_score))
   
 if __name__ == '__main__':
 	result_file = open('out_file', 'a')
-	result_file_header = "criterion_option,max_depth_option,min_samples_leaf/split_option,max_features_option,AAAAA,train_MCC,test_MCC,training_MCC\n"
+	result_file_header = "criterion_option,max_depth_option,min_samples_leaf/split_option,max_features_option,AAAAA,train_MCC,test_MCC,training_MCC,AUC_cross_score\n"
 	result_file.write(result_file_header)
 	DT_criterion = ["entropy","gini"]
-	DT_max_depth = np.arange(3,10,1)
+	DT_max_depth = np.arange(3,feature_number)
 	DT_min_samples_leaf = np.arange(5,251,5)
 	DT_min_samples_split = np.arange(10,301,10)
-	DT_max_features = np.arange(3,feature_number,1)
+	DT_max_features = np.arange(3,feature_number)
 
 	for criterion_option in DT_criterion:
 		for max_depth_option in DT_max_depth:
