@@ -1,19 +1,11 @@
 import numpy as np
 import pandas as pd
 import catboost as cb
-
 from collections import Counter
 from math import sqrt
 from sklearn.model_selection import train_test_split
-from sklearn import tree
-from sklearn.metrics import accuracy_score
 from sklearn.model_selection import cross_val_score
-from sklearn.model_selection import GridSearchCV
-import sklearn.metrics as metrics
 from sklearn.metrics import roc_curve,auc,roc_auc_score,recall_score,precision_score,plot_roc_curve, f1_score
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.ensemble import AdaBoostClassifier
-from lightgbm import LGBMClassifier
 from sklearn.utils.class_weight import compute_class_weight
 from catboost import Pool
 
@@ -26,11 +18,10 @@ X_train, X_test, y_train, y_test = train_test_split(X_training, y_training, test
 classes = np.unique(y_train)
 weights = compute_class_weight(class_weight='balanced', classes=classes, y=y_train)
 train_class_weights = dict(zip(classes, weights))
-
 cat_features = None
 train_pool = Pool(X_train, y_train, cat_features=cat_features)
 test_pool = Pool(X_test, y_test, cat_features=cat_features)
-# ########################################
+
 
 def Find_Optimal_Cutoff(TPR, FPR, threshold):
 	y = TPR - FPR
@@ -99,6 +90,9 @@ def machine_learning(iterations_option,learning_rate_option,depth_option,l2_leaf
 		                                  bagging_temperature=bagging_temperature_option,border_count=254,od_wait=50,eval_metric='AUC',class_weights=train_class_weights, 
 		                                  loss_function='Logloss',task_type='CPU',metric_period=1,cat_features=cat_features,fold_len_multiplier=1.1random_seed=666)
 	machine_model.fit(train_pool, eval_set=test_pool,silent=True)
+	
+	# cross_val_score
+	AUC_cross_score = cross_val_score(machine_model,X_train, y_train,cv=10, scoring='roc_auc').mean()
 
 	# probability_score
 	train_file = pd.DataFrame(machine_model.predict_proba(X_train))
@@ -147,12 +141,12 @@ def machine_learning(iterations_option,learning_rate_option,depth_option,l2_leaf
 	training_DD = c_training["TN"]
 	training_Accuracy, training_precision, training_NPV, training_Sensitivity, training_Specificity, training_F1, training_MCC = calculate_MCC(
 		training_AA, training_BB, training_CC, training_DD)
-	return("%f,%f,%f,%f,%f,%f,%f,%f,%f,%f" % 
-		(iterations_option,learning_rate_option,depth_option,l2_leaf_reg_option,random_strength_option,bagging_temperature_option,AAAAA,train_MCC,test_MCC,training_MCC))
+	return("%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f" % 
+		(iterations_option,learning_rate_option,depth_option,l2_leaf_reg_option,random_strength_option,bagging_temperature_option,AAAAA,train_MCC,test_MCC,training_MCC,AUC_cross_score))
 
 if __name__ == '__main__':
 	result_file = open('out_file', 'a')
-	result_file_header = "iterations_option,learning_rate_option,depth_option,l2_leaf_reg_option,random_strength_option,bagging_temperature_option,AAAAA,train_MCC,test_MCC,training_MCC\n"
+	result_file_header = "iterations_option,learning_rate_option,depth_option,l2_leaf_reg_option,random_strength_option,bagging_temperature_option,AAAAA,train_MCC,test_MCC,training_MCC,AUC_cross_score\n"
 	result_file.write(result_file_header)
 
 	CGBboost_iterations = np.arange(300,1501,100)
