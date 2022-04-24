@@ -77,7 +77,10 @@ def calculate_MCC(TP_number,FN_number,FP_number,TN_number):
 def machine_learning(C_option,gamma_option):
 	machine_model = SVC(kernel = "rbf",C = C_option,gamma = gamma_option,probability = True,class_weight = "balanced", random_state=666,cache_size = 10000)
 	machine_model.fit(X_train, y_train)
-
+	
+	# cross_val_score
+	AUC_cross_score = cross_val_score(machine_model,X_train, y_train,cv=10, scoring='roc_auc').mean()
+	
 	# probability_score
 	train_file = pd.DataFrame(machine_model.predict_proba(X_train))
 	train_file.columns =["negative_score", "pos_score"]
@@ -125,17 +128,20 @@ def machine_learning(C_option,gamma_option):
 	training_DD = c_training["TN"]
 	training_Accuracy, training_precision, training_NPV, training_Sensitivity, training_Specificity, training_F1, training_MCC = calculate_MCC(
 		training_AA, training_BB, training_CC, training_DD)
-	return ("%f,%f,%f,%f,%f,%f" % (C_option, gamma_option, AAAAA, train_MCC, test_MCC, training_MCC))
+	return ("%f,%f,%f,%f,%f,%f,%f" % (C_option,gamma_option,AAAAA,train_MCC,test_MCC,training_MCC,AUC_cross_score))
   
 if __name__ == '__main__':
 	result_file = open('out_file', 'a')
-	result_file_header = "C_option,gamma_option,optimal_th,train_MCC,test_MCC,training_MCC\n"
+	result_file_header = "C_option,gamma_option,optimal_th,train_MCC,test_MCC,training_MCC,AUC_cross_score\n"
 	result_file.write(result_file_header)
+	
 	SVM_linear_C = [1,3,5,7,10,13,15,17,20,25,30,35,40,45,50,60,70,80,90,100]
 	SVM_linear_gamma = [0.001,0.005,0.01,0.05,0.1,0.3,0.5,0.7,0.9,1,3,5,7,9,10,15,20]
+	
 	for C_option in SVM_linear_C:
 		for gamma_option in SVM_linear_gamma:
 			machine_result = machine_learning(C_option, gamma_option)
 			result_file.write(machine_result + "\n")
+			
 	result_file.close()
   
