@@ -1,0 +1,3 @@
+LOVD: https://www.lovd.nl/
+ClinVar：https://www.ncbi.nlm.nih.gov/clinvar/
+ExAC：https://exac.broadinstitute.org/
