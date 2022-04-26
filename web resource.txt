@@ -2,8 +2,8 @@
 The website link used in paper
 ###############################
 LOVD: https://www.lovd.nl/
-ClinVar：https://www.ncbi.nlm.nih.gov/clinvar/
-ExAC：https://exac.broadinstitute.org/
+ClinVar: https://www.ncbi.nlm.nih.gov/clinvar/
+ExAC: https://exac.broadinstitute.org/
 gnomAD: https://gnomad.broadinstitute.org/
 MFASS: https://github.com/KosuriLab/MFASS
 Vex-seq: https://github.com/scottiadamson/Vex-seq
