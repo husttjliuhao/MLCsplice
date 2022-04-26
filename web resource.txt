@@ -1,3 +1,14 @@
+###############################
+The website link used in paper
+###############################
 LOVD: https://www.lovd.nl/
 ClinVar：https://www.ncbi.nlm.nih.gov/clinvar/
 ExAC：https://exac.broadinstitute.org/
+gnomAD: https://gnomad.broadinstitute.org/
+MFASS: https://github.com/KosuriLab/MFASS
+Vex-seq: https://github.com/scottiadamson/Vex-seq
+GTF_GRCh37: https://ftp.ncbi.nlm.nih.gov/genomes/all/annotation_releases/9606/105.20201022/GCF_000001405.25_GRCh37.p13/GCF_000001405.25_GRCh37.p13_genomic.gtf.gz
+GTF_GRCh38: https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.40_GRCh38.p14/GCF_000001405.40_GRCh38.p14_genomic.gtf.gz
+
+
+
