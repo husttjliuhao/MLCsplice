@@ -1,12 +1,28 @@
 ###############################
 The website link used in paper
 ###############################
-LOVD: https://www.lovd.nl/
+DBASS: https://www.dbass.org.uk/
+HGMD: http://www.hgmd.cf.ac.uk/ac/index.php
 ClinVar: https://www.ncbi.nlm.nih.gov/clinvar/
 ExAC: https://exac.broadinstitute.org/
 gnomAD: https://gnomad.broadinstitute.org/
+dbSNP: https://ftp.ncbi.nlm.nih.gov/snp/organisms/human_9606_b151_GRCh37p13/
 MFASS: https://github.com/KosuriLab/MFASS
 Vex-seq: https://github.com/scottiadamson/Vex-seq
+Clinvar: https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh37/clinvar_20210328.vcf.gz
+CADD-Splice score: https://cadd.gs.washington.edu/download
+SpliceAI score: https://github.com/Illumina/SpliceAI/
+S-CAP score: http://bejerano.stanford.edu/scap/
+dbNSFP:  http://database.liulab.science/dbNSFP
+TraP: http://trap-score.org/index.jsp
+MMSplice: https://github.com/gagneurlab/MMSplice_MTSplice
+MaxEntscan: http://hollywood.mit.edu/burgelab/maxent/Xmaxentscan_scoreseq_acc.html
+LaBranchoR: https://github.com/jpaggi/labranchor
+RNABPS: http://nsclbio.jbnu.ac.kr/tools/RNABP/
+BPP: https://github.com/zhqingit/BPP
+SVM-BPfinder: http://regulatorygenomics.upf.edu/Software/SVM_BP/
+
+Mutalyzer: https://mutalyzer.nl/
 GTF_GRCh37: https://ftp.ncbi.nlm.nih.gov/genomes/all/annotation_releases/9606/105.20201022/GCF_000001405.25_GRCh37.p13/GCF_000001405.25_GRCh37.p13_genomic.gtf.gz
 GTF_GRCh38: https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.40_GRCh38.p14/GCF_000001405.40_GRCh38.p14_genomic.gtf.gz
 
