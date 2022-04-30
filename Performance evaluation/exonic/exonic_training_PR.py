@@ -6,12 +6,7 @@ from sklearn.metrics import precision_recall_curve
 from sklearn.metrics import auc
 
 
-df_full = pd.read_csv('exon_training_all_mutation_analysis_2022.txt', sep='\t')
-df_full['group'] = df_full['label'].replace(['case', 'control'], [1, 0])
-df_full = df_full.fillna('NA')
-df = df_full[['group','CADD_splice','spliceAI','MMsplicing_abs','Trap','dbscSNV_ADA_SCORE','dbscSNV_RF_SCORE',
-              'SPIDEX_dpsi_abs','SPIDEX_zscore_abs','maxscant_diff_abs']]
-df.to_csv('simple_exon_training_all_mutation_analysis_2022.txt', index=False, sep='\t')
+df = pd.read_csv('simple_exon_training_all_mutation_analysis_2022.txt', sep='\t')
 
 df_CADD_splice = df[['group', 'CADD_splice']]
 df_CADD_splice_last = df_CADD_splice[~df_CADD_splice['CADD_splice'].isin(['NA'])]
