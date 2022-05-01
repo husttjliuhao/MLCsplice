@@ -8,8 +8,7 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import precision_recall_curve
 from sklearn.metrics import auc
 
-
-df_full = pd.read_csv('predict_score_exon_MFASS_all_mutation_analysis_2022.csv', sep='\t')
+df_full = pd.read_csv(predict scores for the exonic region variants file)
 df_full['group'] = df_full['label'].replace(['case', 'control'], [1, 0])
 df_full = df_full.fillna('NA')
 df = df_full[['group','CADD_splice','spliceAI','MMsplicing_abs','Trap','dbscSNV_ADA_SCORE','dbscSNV_RF_SCORE',
