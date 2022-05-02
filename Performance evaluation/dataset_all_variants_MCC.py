@@ -1,40 +1,93 @@
+
 import pandas as pd
 import numpy as np
+import matplotlib
+import matplotlib.pyplot as plt
+from sklearn.metrics import roc_curve, auc, roc_auc_score, plot_roc_curve
+import pandas as pd
 from collections import Counter
 from math import sqrt
+import os
 
-def handle_data(exonic_MCC,core_donor_MCC,extend_donor_MCC,core_acceptor_MCC,extend_acceptor_MCC,out_csv):
-  df_exonic_full = pd.read_csv(exonic_MCC)
-  df_exonic = df_exonic_full[['soft_name','missing','TP','FN','FP','TN']]
-  
-  df_core_donor_full = pd.read_csv(core_donor_MCC)
-  df_core_donor = df_core_donor_full[['soft_name','missing','TP','FN','FP','TN']]
-  
-  df_extend_donor_full = pd.read_csv(extend_donor_MCC)
-  df_extend_donor = df_extend_donor_full[['soft_name','missing','TP','FN','FP','TN']]
-  
-  df_core_acceptor_full = pd.read_csv(core_acceptor_MCC)
-  df_core_acceptor = df_core_acceptor_full[['soft_name','missing','TP','FN','FP','TN']]
-  
-  df_extend_acceptor_full = pd.read_csv(extend_acceptor_MCC)
-  df_extend_acceptor = df_extend_acceptor_full[['soft_name','missing','TP','FN','FP','TN']]
-  
-  df1 = pd.concat([df_exonic, df_core_donor, df_extend_donor, df_core_acceptor, df_extend_acceptor])
-  df2 = df1.groupby(['soft_name']).agg({"missing": "sum", "TP": "sum", "FN": "sum", "FP": "sum", "TN": "sum"}).reset_index()
-  df3 = df2[['soft_name','missing','TP','FN','FP','TN']]
-  df3['Accuracy']= (df3['TP']+df3['TN'])/(df3['TP']+df3['FN']+df3['FP']+df3['TN'])
-  df3['precision']= df3['TP']/(df3['TP']+df3['FP'])
-  df3['NPV']=df3['TN']/(df3['FN']+df3['TN'])
-  df3['Sensitivity']= df3['TP']/(df3['TP']+df3['FN'])
-  df3['Specificity']= df3['TN']/(df3['FP']+df3['TN'])
-  df3['F1']= 2*df3['precision']*df3['Sensitivity']/(df3['precision']+df3['Sensitivity'])
-  df3['numerator'] = (df3['TP'] * df3['TN']) - (df3['FP'] * df3['FN'])
-  df3['number'] = (df3['TP'] + df3['FP']) * (df3['TP'] + df3['FN']) * (df3['TN'] + df3['FP']) * (df3['TN'] + df3['FN'])
-  df3['denominator'] = df3['number'].apply(np.sqrt)
-  df3['MCC'] = df3['numerator']/df3['denominator']
-  df3['all_mutation'] = df3['missing']+df3['TP']+df3['FN']+df3['FP']+df3['TN']
-  df3_last = df3[['soft_name', 'missing', 'TP', 'FN', 'FP', 'TN','Accuracy', 'precision', 'NPV','Sensitivity', 'Specificity', 'F1', 'MCC', 'all_mutation']]
-  df3_last.to_csv(out_csv, sep='\t', index=False)
+
+df = pd.read_csv(file_name)
+df['group'] = df['label'].replace(['case', 'control'], [1, 0])
+df = df.fillna('NA')
+
+def Evaluation_matrix(row):
+    group = row["group"]
+    predict = row["predict_group"]
+    if group == 0 and predict == 0:
+        return "TN"
+    if group == 0 and predict == 1:
+        return "FP"
+    if group == 1 and predict == 1:
+        return "TP"
+    if group == 1 and predict == 0:
+        return "FN"
+
+
+def handel(column_name, threshold_option):
+    df2 = df.loc[:, ['group', column_name]]
+    df3 = df2[~df2[column_name].isin(['NA'])]
+    df_last = df3
+    number_NA = len(df) - len(df_last)
+    df_last['predict_group'] = df_last[column_name].map(lambda x: 1 if x >= threshold_option else 0)
+    df_last['result'] = df_last[['group', 'predict_group']].apply(Evaluation_matrix, axis=1)
+    c = Counter(df_last['result'])
+    AA = c["TP"]
+    BB = c["FN"]
+    CC = c["FP"]
+    DD = c["TN"]
+    try:
+        Accuracy = (AA + DD) / (AA + BB + CC + DD)
+    except ZeroDivisionError:
+        Accuracy = float('nan')
+    try:
+        precision = AA / (AA + CC)
+    except ZeroDivisionError:
+        precision = float('nan')
+    try:
+        NPV = DD / (BB + DD)
+    except ZeroDivisionError:
+        NPV = float('nan')
+    try:
+        Sensitivity = AA / (AA + BB)
+    except ZeroDivisionError:
+        Sensitivity = float('nan')
+    try:
+        Specificity = DD / (CC + DD)
+    except ZeroDivisionError:
+        Specificity = float('nan')
+    try:
+        F1 = 2 * precision * Sensitivity / (precision + Sensitivity)
+    except ZeroDivisionError:
+        F1 = float('nan')
+    try:
+        numerator = (AA * DD) - (CC * BB)
+        denominator = sqrt((AA + CC) * (AA + BB) * (DD + CC) * (DD + BB))
+        MCC = numerator / denominator
+    except ZeroDivisionError:
+        MCC = float('nan')
+    return "%s,%d,%f,%f,%f,%f,%.4f,%.4f,%.4f,%.4f,%.4f,%.4f,%.4f,%.4f" % \
+           (column_name, number_NA, AA, BB, CC, DD, threshold_option, Accuracy, precision, NPV,Sensitivity,Specificity,F1, MCC)
+
 
 if __name__ == '__main__':
-        handle_data('exonic_MCC_file,core_donor_MCC_file,extend_donor_MCC_file,core_acceptor_MCC_file,extend_acceptor_MCC_file,out_csv_file)
+    # file_names = [name for name in os.listdir() if name.endswith('txt')]
+    file_names = [cutoff_file]
+    result_header = "soft_name,missing,TP,FN,FP,TN,optimal_th,Accuracy, precision, NPV,Sensitivity,Specificity,F1, MCC\n"
+    for name in file_names:
+        f = open(name, 'r')
+        result_file = open(out_csv, 'a')  
+        result_file.write(result_header)
+        for line in f.readlines():
+            if 'soft_name' in line:
+                continue
+            soft_name, opt = line.split('\t')
+            opt = float(opt)
+            result = handel(soft_name, opt)
+            result_file.write(result + "\n")
+        result_file.close()
+        f.close()
+
