@@ -1,0 +1,10 @@
+soft_name	optimal_th
+CADD_splice	23.1
+spliceAI	0.17
+MMsplicing_abs	0.9529
+Trap	0.371
+dbscSNV_ADA_SCORE	0.4773
+dbscSNV_RF_SCORE	0.566
+SPIDEX_dpsi_abs	0.5846
+SPIDEX_zscore_abs	1.199
+maxscant_diff_abs	1.66
