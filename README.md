@@ -5,4 +5,5 @@ MLCsplice is a hybrid model based on splicing region-specific, which integrated 
 
 The web server, MLCsplice (http://39.105.51.3:8090/MLCsplice/), is publicly available for the community-wide prediction of disease-associated splice variants.
 
-![Uploading paper_figure1_20220517.png…]()
+
+![paper_figure1_20220517](https://user-images.githubusercontent.com/104300138/168768395-eafbbbed-0899-48d3-b551-707508fc5d6e.png)
