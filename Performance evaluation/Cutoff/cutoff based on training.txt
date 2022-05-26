@@ -1,27 +1,53 @@
 Splicing region	Methods	Cutoff	Cutoff_label
 exonic	CADD-Splice	22.6000 	training
-exonic	TraP	0.3660 	training
-exonic	MMSplice	1.0981 	training
 exonic	SpliceAI	0.2000 	training
+exonic	MMSplice	1.0981 	training
+exonic	TraP	0.3660 	training
 exonic	MaxEntscan	2.1300 	training
 exonic	SPIDEX-dpsi	0.4814 	training
 exonic	SPIDEX-zscore	1.1260 	training
+exonic	dbscSNV-ADA	0.4779 	training
+exonic	dbscSNV-RF	0.5060 	training
+core donor 	S-CAP	0.0013 	training
+core donor 	dbscSNV-RF	0.4260 	training
+core donor 	dbscSNV-ADA	0.4435 	training
 core donor 	CADD-Splice	17.2200 	training
 core donor 	RegSNPs-intron	0.9731 	training
+core donor 	MaxEntscan	2.9100 	training
 core donor 	SpliceAI	0.2600 	training
 core donor 	TraP	0.8030 	training
+core donor 	MMSplice	1.7700 	training
+core donor 	SPIDEX-dpsi	3.3764 	training
 core donor 	SPIDEX-zscore	2.2230 	training
+extended donor	S-CAP	0.0209 	training
+extended donor	RegSNPs-intron	0.8987 	training
+extended donor	CADD-Splice	9.9380 	training
+extended donor	TraP	0.1160 	training
 extended donor	SpliceAI	0.2100 	training
+extended donor	SPIDEX-dpsi	0.2563 	training
 extended donor	MMSplice	0.5457 	training
 extended donor	SPIDEX-zscore	0.8230 	training
+core acceptor	S-CAP	0.0066 	training
+core acceptor	RegSNPs-intron	0.8529 	training
+core acceptor	dbscSNV-ADA	0.0482 	training
+core acceptor	dbscSNV-RF	0.2360 	training
 core acceptor	SpliceAI	0.2100 	training
+core acceptor	CADD-Splice	15.3200 	training
 core acceptor	MaxEntscan	2.3100 	training
 core acceptor	MMSplice	0.9536 	training
 core acceptor	TraP	0.3320 	training
+core acceptor	SPIDEX-dpsi	2.1349 	training
+core acceptor	SPIDEX-zscore	1.9350 	training
+extended acceptor	S-CAP	0.0021 	training
 extended acceptor	SpliceAI	0.2000 	training
 extended acceptor	MMSplice	0.5078 	training
 extended acceptor	CADD-Splice	10.9900 	training
 extended acceptor	RegSNPs-intron	0.8630 	training
+extended acceptor	LaBranchoR	0.0729 	training
 extended acceptor	BPP	0.1244 	training
 extended acceptor	RNABPS	0.0503 	training
+extended acceptor	TraP	0.1190 	training
+extended acceptor	SPIDEX-dpsi	0.5173 	training
+extended acceptor	SPIDEX-zscore	1.1080 	training
 extended acceptor	SVM-BPfinder	0.0095 	training
+
