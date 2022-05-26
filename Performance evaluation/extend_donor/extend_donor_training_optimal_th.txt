@@ -1,9 +1,0 @@
-soft_name	optimal_th
-SCAP	0.0209
-spliceAI	0.21
-RegSNPs	0.8987
-CADD_splice	9.938
-Trap	0.116
-MMsplicing_abs	0.5457
-SPIDEX_zscore_abs	0.823
-SPIDEX_dpsi_abs	0.2563
