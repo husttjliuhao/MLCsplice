@@ -1,0 +1,52 @@
+Splicing region	Methods	Cutoff	Cutoff_label
+exonic	CADD-Splice	22.6000 	training
+exonic	TraP	0.3660 	training
+exonic	MMSplice	1.0981 	training
+exonic	SpliceAI	0.2000 	training
+exonic	MaxEntscan	2.1300 	training
+exonic	SPIDEX-dpsi	0.4814 	training
+exonic	SPIDEX-zscore	1.1260 	training
+exonic	dbscSNV-ADA	0.4773 	both training and four test datasets
+exonic	dbscSNV-RF	0.5660 	both training and four test datasets
+core donor 	CADD-Splice	17.2200 	training
+core donor 	RegSNPs-intron	0.9731 	training
+core donor 	SpliceAI	0.2600 	training
+core donor 	TraP	0.8030 	training
+core donor 	SPIDEX-zscore	2.2230 	training
+core donor	S-CAP	0.0062 	both training and four test datasets
+core donor	dbscSNV-ADA	0.6501 	both training and four test datasets
+core donor	dbscSNV-RF	0.5700 	both training and four test datasets
+core donor	MaxEntscan	2.9600 	both training and four test datasets
+core donor	MMSplice	1.5990 	both training and four test datasets
+core donor	SPIDEX-dpsi	4.9151 	both training and four test datasets
+extended donor	SpliceAI	0.2100 	training
+extended donor	MMSplice	0.5457 	training
+extended donor	SPIDEX-zscore	0.8230 	training
+extended donor	S-CAP	0.0609 	both training and four test datasets
+extended donor	RegSNPs-intron	0.9587 	both training and four test datasets
+extended donor	CADD-Splice	12.6100 	both training and four test datasets
+extended donor	TraP	0.1160 	both training and four test datasets
+extended donor	SPIDEX-dpsi	0.2834 	both training and four test datasets
+core acceptor	SpliceAI	0.2100 	training
+core acceptor	MaxEntscan	2.3100 	training
+core acceptor	MMSplice	0.9536 	training
+core acceptor	TraP	0.3320 	training
+core acceptor	S-CAP	0.0420 	both training and four test datasets
+core acceptor	RegSNPs-intron	0.8834 	both training and four test datasets
+core acceptor	dbscSNV-RF	0.2420 	both training and four test datasets
+core acceptor	dbscSNV-ADA	0.0121 	both training and four test datasets
+core acceptor	CADD-Splice	15.5200 	both training and four test datasets
+core acceptor	SPIDEX-dpsi	2.1612 	both training and four test datasets
+core acceptor	SPIDEX-zscore	1.6170 	both training and four test datasets
+extended acceptor	SpliceAI	0.2000 	training
+extended acceptor	MMSplice	0.5078 	training
+extended acceptor	CADD-Splice	10.9900 	training
+extended acceptor	RegSNPs-intron	0.8630 	training
+extended acceptor	BPP	0.1244 	training
+extended acceptor	RNABPS	0.0503 	training
+extended acceptor	SVM-BPfinder	0.0095 	training
+extended acceptor	S-CAP	0.0053 	both training and four test datasets
+extended acceptor	TraP	0.1180 	both training and four test datasets
+extended acceptor	LaBranchoR	0.0474 	both training and four test datasets
+extended acceptor	SPIDEX-dpsi	0.5343 	both training and four test datasets
+extended acceptor	SPIDEX-zscore	1.1250 	both training and four test datasets
