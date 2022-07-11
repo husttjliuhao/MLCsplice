@@ -1,0 +1,582 @@
+ch_name	pos	ref	alt	regions	labels	forms
+chr1	161790956	G	C	core donor	SDV	skipping
+chr9	111662096	A	G	core donor	SDV	skipping
+chr1	94476951	A	G	core acceptor	SDV	skipping
+chr3	48921567	A	C	core acceptor	SDV	skipping
+chrX	38182106	C	A	exonic	SDV	skipping
+chr20	25288597	C	T	core donor	SDV	skipping
+chr2	166201424	A	G	core donor	SDV	skipping
+chr4	658655	G	A	extended acceptor	SDV	skipping
+chr17	7919164	G	A	core donor	SDV	skipping
+chr1	94476812	A	G	core donor	SDV	skipping
+chr7	117188692	C	G	core acceptor	SDV	skipping
+chr17	44087666	G	T	core acceptor	SDV	skipping
+chr16	57946932	C	T	extended acceptor	SDV	skipping
+chr17	33445514	A	G	core donor	SDV	skipping
+chr12	89865509	A	G	core acceptor	SDV	skipping
+chr8	61757392	C	T	extended acceptor	SDV	skipping
+chr13	101167821	G	A	exonic	SDV	skipping
+chr3	135980907	G	C	exonic	SDV	skipping
+chr17	48244848	G	A	exonic	SDV	skipping
+chr2	189927591	C	T	exonic	SDV	skipping
+chr11	22272563	T	C	core donor	SDV	skipping
+chrX	49840641	A	G	core donor	SDV	skipping
+chrX	49846290	A	G	core acceptor	SDV	skipping
+chrX	49846295	C	A	core acceptor	SDV	skipping
+chr13	52518245	C	T	exonic	SDV	skipping
+chr7	98988876	G	A	exonic	SDV	skipping
+chr17	29559904	G	A	core donor	SDV	skipping
+chr17	29559902	G	T	core donor	SDV	skipping
+chr17	29557405	G	A	core donor	SDV	skipping
+chr17	29550459	C	A	core acceptor	SDV	skipping
+chr17	29550459	C	G	core acceptor	SDV	skipping
+chr17	29550459	C	T	core acceptor	SDV	skipping
+chr11	2798207	T	C	core acceptor	SDV	skipping
+chr2	32353553	G	A	core donor	SDV	skipping
+chr5	37020979	G	A	exonic	SDV	skipping
+chr7	95926205	C	T	core donor	SDV	skipping
+chrX	38182101	C	T	core donor	SDV	skipping
+chrX	38164048	A	C	core acceptor	SDV	skipping
+chr11	17474666	C	T	exonic	SDV	skipping
+chr11	17450107	C	A	core donor	SDV	skipping
+chr11	17418596	G	C	core acceptor	SDV	skipping
+chr16	88873665	A	G	extended acceptor	SDV	skipping
+chr9	34648759	G	A	exonic	SDV	skipping
+chr17	56780690	G	T	exonic	SDV	skipping
+chr17	56801466	G	A	core donor	SDV	skipping
+chr17	56774225	G	A	core donor	SDV	skipping
+chr17	56780695	G	C	core donor	SDV	skipping
+chr17	56809910	G	T	core donor	SDV	skipping
+chr17	56801398	C	G	core acceptor	SDV	skipping
+chr17	56809842	C	A	core acceptor	SDV	skipping
+chr7	117243836	G	C	exonic	SDV	skipping
+chr16	31499811	G	A	exonic	SDV	skipping
+chr16	31497051	C	T	exonic	SDV	skipping
+chr16	31499359	G	C	exonic	SDV	skipping
+chr1	161139450	G	T	exonic	SDV	skipping
+chr10	79769439	G	T	core acceptor	SDV	skipping
+chrX	154130469	T	C	extended acceptor	SDV	skipping
+chr7	117243836	G	C	exonic	SDV	skipping
+chr7	117243836	G	A	exonic	SDV	skipping
+chr7	117267824	G	C	exonic	SDV	skipping
+chr7	117282647	G	C	exonic	SDV	skipping
+chr7	117170953	G	A	exonic	SDV	skipping
+chr7	117242922	G	A	core donor	SDV	skipping
+chr21	19698749	C	T	exonic	SDV	skipping
+chr22	29091115	C	G	exonic	SDV	skipping
+chr17	7579312	C	T	exonic	SDV	skipping
+chr11	108202767	A	G	core donor	SDV	skipping
+chr17	56801466	G	A	core donor	SDV	skipping
+chr5	112111323	T	A	core acceptor	SDV	skipping
+chr11	119215104	G	T	core acceptor	SDV	skipping
+chrX	31198482	C	A	core donor	SDV	skipping
+chrX	38164048	A	C	core acceptor	SDV	skipping
+chr17	42956924	C	A	exonic	SDV	skipping
+chr11	118890966	A	G	core donor	SDV	skipping
+chr12	57976382	C	A	core acceptor	SDV	skipping
+chr2	47702409	G	T	exonic	SDV	skipping
+chr2	47708009	A	G	exonic	SDV	skipping
+chr2	47708010	G	A	exonic	SDV	skipping
+chr3	37050395	A	G	exonic	SDV	skipping
+chr3	37059088	C	T	exonic	SDV	skipping
+chr3	37083822	G	A	exonic	SDV	skipping
+chr3	37090100	G	T	exonic	SDV	skipping
+chr2	47657079	A	G	exonic	SDV	skipping
+chr2	48033790	G	A	exonic	SDV	skipping
+chr2	47693947	G	A	exonic	SDV	skipping
+chr3	37045965	G	C	exonic	SDV	skipping
+chr3	37050394	C	G	exonic	SDV	skipping
+chr3	37050396	G	A	exonic	SDV	skipping
+chr3	37053590	G	A	exonic	SDV	skipping
+chr3	37053590	G	T	exonic	SDV	skipping
+chr3	37059088	C	G	exonic	SDV	skipping
+chr3	37059089	A	C	exonic	SDV	skipping
+chr3	37059090	G	A	exonic	SDV	skipping
+chr3	37059090	G	C	exonic	SDV	skipping
+chr3	37061953	A	G	exonic	SDV	skipping
+chr3	37061954	G	C	exonic	SDV	skipping
+chr3	37061954	G	T	exonic	SDV	skipping
+chr3	37089174	G	A	exonic	SDV	skipping
+chr3	37090099	A	G	exonic	SDV	skipping
+chr3	37090100	G	A	exonic	SDV	skipping
+chr3	37090508	G	A	exonic	SDV	skipping
+chr3	37090508	G	C	exonic	SDV	skipping
+chr2	47630541	G	C	exonic	SDV	skipping
+chr2	47641557	G	A	exonic	SDV	skipping
+chr2	47693946	A	G	exonic	SDV	skipping
+chr2	47693946	A	T	exonic	SDV	skipping
+chr2	47693947	G	C	exonic	SDV	skipping
+chr2	47698201	G	C	exonic	SDV	skipping
+chr2	47703506	G	T	exonic	SDV	skipping
+chr3	37058999	C	A	exonic	SDV	skipping
+chr3	37058999	C	A	exonic	SDV	skipping
+chr3	37058999	C	T	exonic	SDV	skipping
+chr7	6035165	C	A	exonic	SDV	skipping
+chr2	47708015	G	C	core donor	SDV	skipping
+chr2	47708015	G	T	core donor	SDV	skipping
+chr2	47693952	G	C	core donor	SDV	skipping
+chr3	37053358	G	A	core donor	SDV	skipping
+chr3	37053593	A	C	core donor	SDV	skipping
+chr3	37056038	A	T	core donor	SDV	skipping
+chr3	37056039	A	G	core donor	SDV	skipping
+chr3	37056040	G	C	core donor	SDV	skipping
+chr3	37056040	G	T	core donor	SDV	skipping
+chr3	37059093	A	G	core donor	SDV	skipping
+chr3	37059094	A	G	core donor	SDV	skipping
+chr3	37083825	A	T	core donor	SDV	skipping
+chr3	37083826	A	G	core donor	SDV	skipping
+chr3	37083827	G	A	core donor	SDV	skipping
+chr3	37083828	T	G	core donor	SDV	skipping
+chr3	37090511	A	G	core donor	SDV	skipping
+chr3	37090105	G	C	core donor	SDV	skipping
+chr2	47641560	A	C	core donor	SDV	skipping
+chr2	47641560	A	T	core donor	SDV	skipping
+chr7	6036952	C	T	core donor	SDV	skipping
+chr2	47703501	T	A	core acceptor	SDV	skipping
+chr2	47703503	T	G	core acceptor	SDV	skipping
+chr2	47707827	T	G	core acceptor	SDV	skipping
+chr2	47707832	T	G	core acceptor	SDV	skipping
+chr2	47709910	T	G	core acceptor	SDV	skipping
+chr2	48032046	C	G	core acceptor	SDV	skipping
+chr3	37042443	C	G	core acceptor	SDV	skipping
+chr3	37058990	T	A	core acceptor	SDV	skipping
+chr3	37058992	T	G	core acceptor	SDV	skipping
+chr3	37058994	T	G	core acceptor	SDV	skipping
+chr3	37067125	C	G	core acceptor	SDV	skipping
+chr3	37083756	C	A	core acceptor	SDV	skipping
+chr7	6038909	G	C	core acceptor	SDV	skipping
+chr3	37050292	A	G	extended acceptor	SDV	skipping
+chrX	154130469	T	C	extended acceptor	SDV	skipping
+chr5	70247768	G	C	exonic	SDV	skipping
+chr17	41215885	A	G	core donor	SDV	skipping
+chr11	103055779	A	T	exonic	SDV	skipping
+chr2	44548966	C	A	exonic	SDV	skipping
+chr13	32900285	C	T	exonic	SDV	skipping
+chr3	37050395	A	G	exonic	SDV	skipping
+chr3	37059088	C	T	exonic	SDV	skipping
+chr3	37083822	G	A	exonic	SDV	skipping
+chr3	37090100	G	T	exonic	SDV	skipping
+chr3	37058999	C	A	exonic	SDV	skipping
+chr3	37058999	C	T	exonic	SDV	skipping
+chr10	79769440	G	C	core acceptor	SDV	skipping
+chr13	52534477	A	T	extended acceptor	SDV	skipping
+chr17	39973459	A	T	core donor	SDV	skipping
+chr11	72292916	C	T	core donor	SDV	skipping
+chr16	53672355	C	G	extended acceptor	SDV	skipping
+chr13	32893467	G	C	core donor	SDV	skipping
+chr9	99003189	C	T	exonic	SDV	skipping
+chr3	37053595	G	A	core donor	SDV	skipping
+chr7	148523563	T	C	exonic	SDV	skipping
+chr7	148523723	A	C	exonic	SDV	skipping
+chr6	133802737	G	T	exonic	SDV	skipping
+chr6	133827333	G	A	exonic	SDV	skipping
+chr11	108106561	G	C	exonic	SDV	skipping
+chr1	94487279	C	T	core acceptor	SDV	skipping
+chr12	89891122	A	C	core acceptor	SDV	skipping
+chrX	46736926	G	A	extended acceptor	SDV	skipping
+chr2	152389953	T	C	core donor	SDV	skipping
+chr17	41199745	A	T	extended acceptor	SDV	skipping
+chrX	49840641	A	G	core donor	SDV	skipping
+chrX	49846290	A	G	core acceptor	SDV	skipping
+chrX	49846295	C	A	core acceptor	SDV	skipping
+chr5	127671677	T	G	core donor	SDV	skipping
+chr1	16372180	A	C	exonic	SDV	skipping
+chr17	41203080	C	T	exonic	SDV	skipping
+chr3	37090511	A	G	core donor	SDV	skipping
+chr11	108214103	G	A	core donor	SDV	skipping
+chr16	23619180	C	T	core donor	SDV	skipping
+chr16	23632678	C	G	core donor	SDV	skipping
+chr17	41276029	C	T	core donor	SDV	skipping
+chr17	41215885	A	C	core donor	SDV	skipping
+chr17	29550451	T	G	core acceptor	SDV	skipping
+chr11	118890966	A	G	core donor	SDV	skipping
+chr17	41228500	C	T	core donor	SDV	skipping
+chr17	80863929	G	C	exonic	SDV	skipping
+chr10	89690846	G	C	exonic	SDV	skipping
+chr1	150531125	G	A	exonic	SDV	skipping
+chr13	32944693	A	G	exonic	SDV	skipping
+chr11	67379040	G	A	exonic	SDV	skipping
+chr6	132168916	G	T	exonic	SDV	skipping
+chr14	95583959	C	T	exonic	SDV	skipping
+chr15	48773852	C	G	exonic	SDV	skipping
+chr15	48760609	C	A	exonic	SDV	skipping
+chr15	48752443	C	T	exonic	SDV	skipping
+chr15	48829808	C	T	exonic	SDV	skipping
+chr15	48719765	T	C	exonic	SDV	skipping
+chr15	48719764	C	G	exonic	SDV	skipping
+chr11	111959740	G	A	core donor	SDV	skipping
+chr5	86670739	T	G	core donor	SDV	skipping
+chr3	129226609	A	G	core donor	SDV	skipping
+chr11	86055766	A	G	core donor	SDV	skipping
+chr17	29527616	A	G	core donor	SDV	skipping
+chr17	2579906	T	A	core donor	SDV	skipping
+chr17	41215885	A	G	core donor	SDV	skipping
+chr17	41215885	A	G	core donor	SDV	skipping
+chr11	47364376	C	G	core donor	SDV	skipping
+chr11	47364125	T	A	core donor	SDV	skipping
+chr11	47364125	T	A	core donor	SDV	skipping
+chr16	23625320	C	G	core donor	SDV	skipping
+chr17	41234415	A	G	core donor	SDV	skipping
+chr5	127654568	T	C	core donor	SDV	skipping
+chr17	41215886	C	G	core donor	SDV	skipping
+chr15	48738898	C	T	core donor	SDV	skipping
+chr17	41267740	T	A	core donor	SDV	skipping
+chr15	93545401	T	G	core acceptor	SDV	skipping
+chr17	44110563	A	C	core acceptor	SDV	skipping
+chr17	41215416	T	C	extended acceptor	SDV	skipping
+chrX	129274619	A	C	extended acceptor	SDV	skipping
+chr15	101514172	G	A	exonic	SDV	skipping
+chrX	154128141	C	T	exonic	SDV	skipping
+chrX	107849932	A	G	extended acceptor	SDV	skipping
+chr9	137686903	T	G	extended acceptor	SDV	skipping
+chr13	49039315	A	C	extended acceptor	SDV	skipping
+chr9	130578354	A	G	extended acceptor	SDV	skipping
+chr5	127670562	A	C	extended acceptor	SDV	skipping
+chr18	21137182	T	C	extended acceptor	SDV	skipping
+chr11	2187017	A	T	extended acceptor	SDV	skipping
+chr12	6101204	T	A	extended acceptor	SDV	skipping
+chr3	14209904	T	C	extended acceptor	SDV	skipping
+chr17	41199745	A	T	extended acceptor	SDV	skipping
+chr17	41199745	A	T	extended acceptor	SDV	skipping
+chr17	41215416	T	C	extended acceptor	SDV	skipping
+chr17	41258568	A	C	extended acceptor	SDV	skipping
+chr17	41258577	A	T	extended acceptor	SDV	skipping
+chr17	41228664	A	C	extended acceptor	SDV	skipping
+chr17	41215416	T	A	extended acceptor	SDV	skipping
+chr3	130698266	A	G	core donor	SDV	skipping
+chr3	130656269	T	G	core acceptor	SDV	skipping
+chr5	78135174	C	A	core donor	SDV	skipping
+chrX	62926135	T	C	core donor	SDV	skipping
+chr22	50508957	A	G	exonic	SDV	skipping
+chr11	108115753	G	A	exonic	SDV	skipping
+chr11	108127067	G	A	exonic	SDV	skipping
+chr13	32954050	G	A	exonic	SDV	skipping
+chr16	68853328	G	A	exonic	SDV	skipping
+chr17	41228505	C	A	exonic	SDV	skipping
+chr17	41219627	G	T	exonic	SDV	skipping
+chr13	32921038	G	A	core donor	SDV	skipping
+chr13	32937673	A	C	core donor	SDV	skipping
+chr17	56798178	G	T	core donor	SDV	skipping
+chr17	41222942	C	G	core donor	SDV	skipping
+chr22	29120962	T	A	core donor	SDV	skipping
+chr17	41209164	C	T	core acceptor	SDV	skipping
+chr2	215617291	A	C	core acceptor	SDV	skipping
+chr22	29121360	A	T	core acceptor	SDV	skipping
+chr19	15299048	G	A	exonic	SDV	skipping
+chr11	2156592	C	T	core donor	SDV	skipping
+chr16	2129279	C	T	exonic	SDV	skipping
+chr11	118890966	A	G	core donor	SDV	skipping
+chr17	15163962	C	T	core donor	SDV	skipping
+chr7	94038138	A	T	core donor	SDV	skipping
+chr7	94039613	T	G	core donor	SDV	skipping
+chr7	94039844	G	A	core donor	SDV	skipping
+chr17	48267214	A	G	core donor	SDV	skipping
+chr4	128864904	T	G	core donor	SDV	skipping
+chr9	103002527	G	A	core donor	SDV	skipping
+chrX	32613874	C	T	exonic	SDV	skipping
+chr9	71852789	T	G	core acceptor	SDV	skipping
+chr14	31549776	C	A	core acceptor	SDV	skipping
+chr2	179514069	A	C	core acceptor	SDV	skipping
+chrX	77380548	G	A	exonic	SDV	skipping
+chrX	154215590	A	C	core acceptor	SDV	skipping
+chrX	119679296	T	C	core donor	SDV	skipping
+chr10	73550880	G	A	core acceptor	SDV	skipping
+chr10	73550874	G	A	extended acceptor	SDV	skipping
+chr2	58387243	C	T	exonic	SDV	skipping
+chrX	18638091	G	A	core donor	SDV	skipping
+chrX	18528979	G	A	core donor	SDV	skipping
+chr19	36322540	C	T	core donor	SDV	skipping
+chr1	94488942	C	T	exonic	SDV	skipping
+chr1	94470997	C	T	exonic	SDV	skipping
+chr1	94577135	C	T	exonic	SDV	skipping
+chr1	94486791	C	T	core donor	SDV	skipping
+chr1	94522386	C	T	core acceptor	SDV	skipping
+chr1	94474432	A	C	core acceptor	SDV	skipping
+chr7	42116348	T	A	core donor	SDV	skipping
+chr16	88776695	G	A	core donor	SDV	skipping
+chr17	78078931	G	A	exonic	SDV	skipping
+chr17	78078931	G	C	exonic	SDV	skipping
+chr17	78078931	G	T	exonic	SDV	skipping
+chr17	78078936	G	T	core donor	SDV	skipping
+chr17	78078351	C	A	core acceptor	SDV	skipping
+chr17	78078351	C	G	core acceptor	SDV	skipping
+chr1	91742541	C	T	exonic	SDV	skipping
+chr2	217329395	G	A	core donor	SDV	skipping
+chr12	49418739	A	C	core acceptor	SDV	skipping
+chr16	16248730	C	T	exonic	SDV	skipping
+chr17	41228505	C	T	exonic	SDV	skipping
+chr13	32900754	A	G	core donor	SDV	skipping
+chr17	41228502	T	G	core donor	SDV	skipping
+chr17	41203076	T	C	core donor	SDV	skipping
+chr11	67810964	G	A	exonic	SDV	skipping
+chrX	22094595	G	C	core donor	SDV	skipping
+chrX	22094596	A	C	core donor	SDV	skipping
+chrX	22094598	T	C	core donor	SDV	skipping
+chrX	22186511	G	C	core donor	SDV	skipping
+chrX	22196499	T	C	core donor	SDV	skipping
+chrX	22237225	G	A	core donor	SDV	skipping
+chrX	22239865	G	A	core donor	SDV	skipping
+chrX	22115070	C	G	core acceptor	SDV	skipping
+chrX	22129582	C	A	core acceptor	SDV	skipping
+chrX	22237137	T	A	extended acceptor	SDV	skipping
+chr11	94211901	C	T	exonic	SDV	skipping
+chr16	56873415	G	A	extended acceptor	SDV	skipping
+chr8	38027316	T	G	core donor	SDV	skipping
+chrX	135098796	C	A	core acceptor	SDV	skipping
+chr14	24619657	G	C	exonic	SDV	skipping
+chr14	24620591	A	G	core donor	SDV	skipping
+chr18	67697350	A	T	core acceptor	SDV	skipping
+chr13	32900750	G	A	exonic	SDV	skipping
+chr13	32900636	G	T	exonic	SDV	skipping
+chr13	32893467	G	C	core donor	SDV	skipping
+chr13	32890667	A	G	core donor	SDV	skipping
+chr13	32893468	T	C	core donor	SDV	skipping
+chr13	32900290	A	T	core donor	SDV	skipping
+chr13	32900753	A	G	core donor	SDV	skipping
+chr13	32900376	C	A	core acceptor	SDV	skipping
+chr4	100532489	G	T	exonic	SDV	skipping
+chr13	32900376	C	A	core acceptor	SDV	skipping
+chr12	32945671	A	G	core acceptor	SDV	skipping
+chrX	49082866	C	G	core donor	SDV	skipping
+chr14	23883216	C	T	exonic	SDV	skipping
+chr14	23883211	C	G	core donor	SDV	skipping
+chr17	78082411	G	A	core donor	SDV	skipping
+chr5	147207580	C	T	core donor	SDV	skipping
+chr3	120363303	A	C	extended acceptor	SDV	skipping
+chr3	120363307	C	T	extended acceptor	SDV	skipping
+chr21	47630597	C	T	core donor	SDV	skipping
+chrX	154133086	C	T	exonic	SDV	skipping
+chrX	154225243	C	T	core donor	SDV	skipping
+chrX	154221206	C	T	core donor	SDV	skipping
+chrX	154134690	C	A	core donor	SDV	skipping
+chrX	154132178	T	A	core donor	SDV	skipping
+chrX	154132178	T	G	core donor	SDV	skipping
+chrX	154227878	G	A	core acceptor	SDV	skipping
+chrX	154227886	A	C	core acceptor	SDV	skipping
+chrX	154213089	A	G	core acceptor	SDV	skipping
+chr16	28905928	G	A	exonic	SDV	skipping
+chr1	94577158	A	C	extended acceptor	SDV	skipping
+chr11	47364125	T	A	core donor	SDV	skipping
+chr11	47369405	C	A	core donor	SDV	skipping
+chr11	47367930	C	T	core acceptor	SDV	skipping
+chr11	47354256	G	C	core acceptor	SDV	skipping
+chr1	100588858	T	C	extended acceptor	SDV	skipping
+chr20	45217796	T	C	core donor	SDV	skipping
+chr3	190126103	G	A	exonic	SDV	skipping
+chr3	190126103	G	C	exonic	SDV	skipping
+chr5	37049406	A	C	core donor	SDV	skipping
+chr4	16000005	T	C	core donor	SDV	skipping
+chr1	43204092	C	A	exonic	SDV	skipping
+chr7	124510965	C	T	exonic	SDV	skipping
+chr12	6085277	C	T	exonic	SDV	skipping
+chr12	6181497	C	T	exonic	SDV	skipping
+chr17	41203080	C	T	exonic	SDV	skipping
+chr11	31824248	T	C	core donor	SDV	skipping
+chr11	31814980	A	C	core donor	SDV	skipping
+chr2	27535123	A	C	core acceptor	SDV	skipping
+chr5	36958338	G	C	core donor	SDV	skipping
+chr5	37006456	C	T	core acceptor	SDV	skipping
+chr11	68157342	T	A	core acceptor	non-SDV	normal
+chr19	54627090	C	T	extended acceptor	non-SDV	normal
+chr10	95389004	T	C	core acceptor	non-SDV	normal
+chr3	136016912	C	T	exonic	non-SDV	normal
+chr13	100915094	A	G	extended donor	non-SDV	normal
+chr11	31823110	C	A	exonic	non-SDV	normal
+chrX	49837127	T	G	extended acceptor	non-SDV	normal
+chrX	49837127	T	G	extended acceptor	non-SDV	normal
+chr17	29486005	G	A	extended acceptor	non-SDV	normal
+chr17	29677184	C	T	extended acceptor	non-SDV	normal
+chr17	29685957	G	A	extended acceptor	non-SDV	normal
+chr11	17449501	G	A	core acceptor	non-SDV	normal
+chr11	17417496	G	A	extended acceptor	non-SDV	normal
+chr17	56772289	C	T	core acceptor	non-SDV	normal
+chr13	32900292	G	T	core donor	non-SDV	normal
+chr18	48593561	A	G	core donor	non-SDV	normal
+chr11	108153424	T	C	extended acceptor	non-SDV	normal
+chr11	108153424	T	G	extended acceptor	non-SDV	normal
+chr14	23344459	G	T	core donor	non-SDV	normal
+chr3	37042537	G	C	exonic	non-SDV	normal
+chr3	37042537	G	C	exonic	non-SDV	normal
+chr2	48033789	C	T	exonic	non-SDV	normal
+chr3	37042539	G	A	exonic	non-SDV	normal
+chr3	37038115	A	C	exonic	non-SDV	normal
+chr3	37038117	G	A	exonic	non-SDV	normal
+chr3	37067129	C	A	exonic	non-SDV	normal
+chr2	47656881	A	T	exonic	non-SDV	normal
+chr2	47702165	C	G	exonic	non-SDV	normal
+chr2	47635697	A	G	core donor	non-SDV	normal
+chr2	47635697	A	G	core donor	non-SDV	normal
+chr2	47637514	A	G	core donor	non-SDV	normal
+chr2	47637514	A	G	core donor	non-SDV	normal
+chr2	47693953	C	T	core donor	non-SDV	normal
+chr2	48018275	A	G	extended donor	non-SDV	normal
+chr2	47657091	A	G	extended donor	non-SDV	normal
+chr2	47657091	A	G	extended donor	non-SDV	normal
+chr3	37053364	G	C	extended donor	non-SDV	normal
+chr3	37056045	A	G	extended donor	non-SDV	normal
+chr3	37061963	G	A	extended donor	non-SDV	normal
+chr3	37070434	G	A	extended donor	non-SDV	normal
+chr2	47693959	G	A	extended donor	non-SDV	normal
+chr2	47698210	A	C	extended donor	non-SDV	normal
+chr2	47703500	T	C	core acceptor	non-SDV	normal
+chr2	48032039	T	A	core acceptor	non-SDV	normal
+chr2	48032754	A	T	core acceptor	non-SDV	normal
+chr2	48033337	T	A	core acceptor	non-SDV	normal
+chr2	47693788	A	G	core acceptor	non-SDV	normal
+chr2	47693788	A	G	core acceptor	non-SDV	normal
+chr3	37061796	G	T	core acceptor	non-SDV	normal
+chr3	37067120	T	A	core acceptor	non-SDV	normal
+chr3	37081667	T	G	core acceptor	non-SDV	normal
+chr3	37081674	C	T	core acceptor	non-SDV	normal
+chr3	37089001	T	C	core acceptor	non-SDV	normal
+chr2	47656871	T	C	core acceptor	non-SDV	normal
+chr2	47672679	T	C	core acceptor	non-SDV	normal
+chr2	47690162	G	T	core acceptor	non-SDV	normal
+chr2	47693788	A	T	core acceptor	non-SDV	normal
+chr2	47698095	G	A	core acceptor	non-SDV	normal
+chr2	48032033	C	T	extended acceptor	non-SDV	normal
+chr2	48032033	C	T	extended acceptor	non-SDV	normal
+chr3	37038096	G	T	extended acceptor	non-SDV	normal
+chr3	37053489	G	A	extended acceptor	non-SDV	normal
+chr2	47630458	A	G	extended acceptor	non-SDV	normal
+chr2	47637206	A	C	extended acceptor	non-SDV	normal
+chr2	47698086	T	C	extended acceptor	non-SDV	normal
+chr13	32899203	A	G	core acceptor	non-SDV	normal
+chr13	32936646	T	C	extended acceptor	non-SDV	normal
+chr13	32968810	T	C	extended acceptor	non-SDV	normal
+chrX	49837127	T	G	extended acceptor	non-SDV	normal
+chrX	49837127	T	G	extended acceptor	non-SDV	normal
+chr17	41199720	C	A	exonic	non-SDV	normal
+chr3	37090106	T	G	core donor	non-SDV	normal
+chr2	3627853	A	G	core donor	non-SDV	normal
+chr15	48888476	T	C	core donor	non-SDV	normal
+chr15	48779506	T	G	core donor	non-SDV	normal
+chr17	41203067	C	A	extended donor	non-SDV	normal
+chr15	48719757	G	C	extended donor	non-SDV	normal
+chr13	32920960	C	T	core acceptor	non-SDV	normal
+chr17	41223263	G	C	core acceptor	non-SDV	normal
+chr17	41223263	G	C	core acceptor	non-SDV	normal
+chr17	41219723	A	G	core acceptor	non-SDV	normal
+chr17	41215974	G	T	core acceptor	non-SDV	normal
+chr15	48730117	G	A	core acceptor	non-SDV	normal
+chr9	98222076	G	A	core acceptor	non-SDV	normal
+chr2	48032033	C	T	extended acceptor	non-SDV	normal
+chr2	48032033	C	T	extended acceptor	non-SDV	normal
+chr13	32971022	C	G	extended acceptor	non-SDV	normal
+chr17	41267810	G	A	extended acceptor	non-SDV	normal
+chr16	2166142	A	G	extended acceptor	non-SDV	normal
+chr13	32900633	C	T	core acceptor	no-SDV	normal
+chr13	32920938	T	C	extended acceptor	no-SDV	normal
+chr13	32928954	A	G	extended acceptor	no-SDV	normal
+chr13	32928954	A	T	extended acceptor	no-SDV	normal
+chr13	32930543	C	T	extended acceptor	no-SDV	normal
+chr13	32931857	T	C	extended acceptor	no-SDV	normal
+chr13	32931842	A	G	extended acceptor	no-SDV	normal
+chr13	32936620	A	G	extended acceptor	no-SDV	normal
+chr13	32950781	A	G	extended acceptor	no-SDV	normal
+chr13	32950777	A	G	extended acceptor	no-SDV	normal
+chr13	32968808	C	A	extended acceptor	no-SDV	normal
+chr7	117199500	G	A	extended acceptor	no-SDV	normal
+chr7	117227771	A	C	extended acceptor	no-SDV	normal
+chr7	117242858	A	G	extended acceptor	no-SDV	normal
+chr7	117251602	A	G	extended acceptor	no-SDV	normal
+chr7	117267556	T	C	extended acceptor	no-SDV	normal
+chr7	117306942	A	G	extended acceptor	no-SDV	normal
+chr3	37081641	C	T	extended acceptor	no-SDV	normal
+chr3	37088972	G	A	extended acceptor	no-SDV	normal
+chr3	37089974	T	C	extended acceptor	no-SDV	normal
+chr3	37048439	C	G	extended acceptor	no-SDV	normal
+chr3	37053477	G	A	extended acceptor	no-SDV	normal
+chr2	47698061	C	T	extended acceptor	no-SDV	normal
+chr2	48032717	T	A	extended acceptor	no-SDV	normal
+chr10	89690764	A	G	extended acceptor	no-SDV	normal
+chr17	56798082	A	G	extended acceptor	no-SDV	normal
+chr5	112102857	G	C	extended acceptor	no-SDV	normal
+chr5	112136947	A	T	extended acceptor	no-SDV	normal
+chr5	112151168	A	T	extended acceptor	no-SDV	normal
+chr13	32900216	G	T	extended acceptor	no-SDV	normal
+chr13	32900214	G	A	extended acceptor	no-SDV	normal
+chr13	32900201	T	A	extended acceptor	no-SDV	normal
+chr13	32900355	A	G	extended acceptor	no-SDV	normal
+chr13	32900617	C	T	extended acceptor	no-SDV	normal
+chr13	32900616	A	G	extended acceptor	no-SDV	normal
+chr13	32903536	A	T	extended acceptor	no-SDV	normal
+chr13	32905026	A	C	extended acceptor	no-SDV	normal
+chr13	32905024	A	G	extended acceptor	no-SDV	normal
+chr13	32918675	T	A	extended acceptor	no-SDV	normal
+chr16	67976514	G	T	extended acceptor	no-SDV	normal
+chr16	67976515	G	T	extended acceptor	no-SDV	normal
+chr16	23640635	T	C	extended acceptor	no-SDV	normal
+chr16	23637754	T	C	extended acceptor	no-SDV	normal
+chr17	41243077	T	C	extended acceptor	no-SDV	normal
+chr17	41243078	G	A	extended acceptor	no-SDV	normal
+chr17	41234633	T	G	extended acceptor	no-SDV	normal
+chr17	41228668	C	T	extended acceptor	no-SDV	normal
+chr17	41251922	C	T	extended acceptor	no-SDV	normal
+chr17	41219732	T	C	extended acceptor	no-SDV	normal
+chr17	41215424	A	C	extended acceptor	no-SDV	normal
+chr17	41209170	C	T	extended acceptor	no-SDV	normal
+chr17	41203156	G	C	extended acceptor	no-SDV	normal
+chr17	41203161	A	C	extended acceptor	no-SDV	normal
+chr17	41201244	A	C	extended acceptor	no-SDV	normal
+chr17	41197860	T	C	extended acceptor	no-SDV	normal
+chr17	41249324	A	C	extended acceptor	no-SDV	normal
+chr17	41247973	A	G	extended acceptor	no-SDV	normal
+chr17	41267814	G	T	extended acceptor	no-SDV	normal
+chr17	41267816	G	A	extended acceptor	no-SDV	normal
+chr16	23652433	T	C	exonic	non-SDV	normal
+chr17	41267796	A	G	exonic	non-SDV	normal
+chr11	108205690	T	G	core acceptor	non-SDV	normal
+chr17	41267802	A	G	core acceptor	non-SDV	normal
+chr17	41258570	A	C	extended acceptor	non-SDV	normal
+chr3	52325759	A	G	core acceptor	non-SDV	normal
+chr3	52325759	A	G	core acceptor	non-SDV	normal
+chr17	48267211	G	A	extended donor	non-SDV	normal
+chr7	94039545	G	T	core acceptor	non-SDV	normal
+chr17	48276697	G	A	core acceptor	non-SDV	normal
+chrX	154215612	T	C	extended acceptor	non-SDV	normal
+chr16	68835796	G	T	exonic	non-SDV	normal
+chr16	68835573	T	G	exonic	non-SDV	normal
+chr2	47635697	A	G	core donor	non-SDV	normal
+chr2	47635697	A	G	core donor	non-SDV	normal
+chr2	47637514	A	G	core donor	non-SDV	normal
+chr2	47637514	A	G	core donor	non-SDV	normal
+chr11	108225606	A	C	core donor	non-SDV	normal
+chr5	131939742	A	T	core donor	non-SDV	normal
+chr17	41234417	A	G	core donor	non-SDV	normal
+chr16	23649167	T	C	core donor	non-SDV	normal
+chr17	33446127	C	A	core donor	non-SDV	normal
+chr5	131911464	C	T	core acceptor	non-SDV	normal
+chr16	68842323	T	C	core acceptor	non-SDV	normal
+chr16	68847211	T	G	core acceptor	non-SDV	normal
+chr2	21251414	C	T	core acceptor	non-SDV	normal
+chr2	21256405	G	C	extended acceptor	non-SDV	normal
+chr7	44185083	G	C	extended donor	non-SDV	normal
+chr1	94502913	C	T	core acceptor	non-SDV	normal
+chr13	32929431	G	A	core donor	non-SDV	normal
+chr13	32969074	A	G	core donor	non-SDV	normal
+chr17	41219619	G	C	core donor	non-SDV	normal
+chr13	32932079	A	G	extended donor	non-SDV	normal
+chr13	32969079	A	C	extended donor	non-SDV	normal
+chr17	41267807	A	G	core acceptor	non-SDV	normal
+chr17	41226548	T	C	core acceptor	non-SDV	normal
+chr17	41201219	G	A	core acceptor	non-SDV	normal
+chr13	32903564	A	C	extended acceptor	non-SDV	normal
+chr13	32945073	T	G	extended acceptor	non-SDV	normal
+chr1	94508473	C	T	extended acceptor	non-SDV	normal
+chr13	32921032	C	T	exonic	non-SDV	normal
+chr13	32930561	A	G	core acceptor	non-SDV	normal
+chr17	41223263	G	C	core acceptor	non-SDV	normal
+chr17	41223263	G	C	core acceptor	non-SDV	normal
+chr17	41219716	A	C	core acceptor	non-SDV	normal
+chr17	41267810	G	C	extended acceptor	non-SDV	normal
+chr17	41256293	G	C	extended acceptor	non-SDV	normal
+chr17	41201228	G	T	extended acceptor	non-SDV	normal
+chr17	41267809	G	C	extended acceptor	non-SDV	normal
+chr17	41256134	T	C	core donor	non-SDV	normal
+chr5	147209149	A	C	extended donor	non-SDV	normal
+chr5	147207739	G	T	extended acceptor	non-SDV	normal
+chr3	120369723	C	T	core acceptor	non-SDV	normal
+chr12	6092310	C	A	core donor	non-SDV	normal
+chr12	6077337	G	C	core acceptor	non-SDV	normal
+chr17	41256283	A	G	core acceptor	non-SDV	normal
